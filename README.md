@@ -1,3 +1,10 @@
+##Completed Assignment
+###Exploratory Data Analysis - Project 1
+###Peter Olsen - 10/2015
+
+The scripts and png files are in the root folder.
+
+
 ## Introduction
 
 This assignment uses data from
