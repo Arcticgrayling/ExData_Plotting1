@@ -2,14 +2,16 @@
 #Project1, graph 3, 
 #  Peter Olsen, 10/2015
 rm(list=ls())
+
+if(!file.exists("data")){
+        dir.create("data")
+}
+
 e.df <- read.table("data/household_power_consumption.txt", 
                    sep = ";",
                    header = TRUE,
                    na.strings = c("?",""))
 subdf <- subset(e.df, ( Date %in% c("1/2/2007","2/2/2007")))
-
-
-#as.character(econsumesub$Date)
 
 D <- strptime(subdf$Date, "%d/%m/%Y")
 

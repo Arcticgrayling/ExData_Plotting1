@@ -2,6 +2,11 @@
 #Project1, graph 1, 
 #  Peter Olsen, 10/2015
 rm(list=ls())
+
+if(!file.exists("data")){
+        dir.create("data")
+}
+
 e.df <- read.table("data/household_power_consumption.txt", 
                 sep = ";",
                 header = TRUE,
